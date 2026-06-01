@@ -1,5 +1,17 @@
+<%--
+    Author:     Robert Breutzmann
+    Date:       June 1, 2026
+    Course:     CSD 430 - Server-Side Development
+    Assignment: Assignment 1.3
+    Due Date:   June 7th, 2026
+
+    Purpose: Demonstrate basic JSP by displaying server environment info
+             (current time, Java version, server name) and a time-based greeting.
+ --%>
+
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ page import="java.util.Date, java.text.SimpleDateFormat" %>
+<%-- Gather metadata and server environment values used throughout the page --%>
 <%
     String author = "Robert Breutzmann";
     String course  = "CSD-430";
@@ -16,6 +28,7 @@
 <head>
     <meta charset="UTF-8">
     <title><%= course %> - <%= assignment %></title>
+    <%-- Basic inline styles: centered layout, styled table with alternating rows --%>
     <style>
         body  { font-family: Arial, sans-serif; max-width: 620px; margin: 60px auto; color: #2c3e50; }
         h1    { border-bottom: 2px solid #3498db; padding-bottom: 8px; }
@@ -28,9 +41,10 @@
 </head>
 <body>
 
-    <h1><%= course %> &mdash; <%= assignment %></h1>
+    <h1><%= course %> -- <%= assignment %></h1>
     <p>This JSP page demonstrates Java code embedded within HTML markup.</p>
 
+    <%-- Table displaying server environment details collected in the scriptlet above --%>
     <table>
         <tr>
             <th>Field</th>
