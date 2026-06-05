@@ -454,7 +454,7 @@ Select one of the topics below. Then, answer the “what,” “how,” and “w
 
 **Please read through the instructions for both assignments in this modules before beginning this assignment. **
 
-<mark>**Note:** Please do not submit more than the project files required for Modules 5 & 6. Doing so will cause you to lose 30% of your grade on this module.</mark>
+> !**Note:** Please do not submit more than the project files required for Modules 5 & 6. Doing so will cause you to lose 30% of your grade on this module.
 
 The first step for this project assignment will be to create your database using MySQL. The database will be titled CSD430. Then you will create and populate your table titled data with a minimum of 5 fields, one being a primary key. Insert a minimum of 10 records. For this assignment, you will submit screenshots displaying the completion of creating and populating the table, along with the records held in the table. Lastly, include an SQL file with the code needed to create and populate the table.
 
@@ -594,7 +594,7 @@ Hybrid cloud
 
 ##### Assignment 8.2
 
-<mark>**Note:** Please do not submit more than the Module 5 & 6, Module 7, and Module 8 project files required for Module 8. Doing so will cause you to lose 30% of your grade.</mark>
+> !**Note:** Please do not submit more than the Module 5 & 6, Module 7, and Module 8 project files required for Module 8. Doing so will cause you to lose 30% of your grade.
 
 For this module, you will continue to use the same database (db) and table as in the previous module. For this week’s assignment, you will create a form that requests data from a user to be added to the database. The form will hold an HTML dropdown for the user to select a record to be updated. All the values listed in the HTML Dropdown Menu will hold a listing of the key values held in the db. When the user selects the record to be updated, the return JSP will hold all fields in an input tag except for the key field. The key field will be displayed in a non-updatable format. The user can then update the values, and when submitted a return JSP will display the updated record, displaying all the record data in a table format along with a table header showing field types. All pages for this assignment will be JSPs.
 
@@ -679,7 +679,7 @@ Select one of the following REpresentational State Transfer (RESTful) topics bel
 
 ##### Assignment 9.2
 
-<mark>**Note:** Please remember that for this module, you are to submit all files for Modules 5 & 6, Module 7, Module 8, and Module 9.</mark>
+> !**Note:** Please remember that for this module, you are to submit all files for Modules 5 & 6, Module 7, Module 8, and Module 9.
 
 For this module, you will continue to use the same database (db) and table as in the previous module. For this week’s assignment, you will create a form that displays all records in a table format. The form will also hold an HTML select dropdown holding all key fields. The user will then select the key for the record to be deleted. When submitted, the return will display all remaining fields left in the same table format. The return page will also hold the HTML select dropdown holding all remaining keys. The user may then select another key to delete another record. When and if all records are deleted, the returning page will show an empty table still holding the \<thaed\> row. For this assignment, you may use more than one JSP. Remember, this is Project Part 4, not a new project.
 
