@@ -1,10 +1,10 @@
 <%--
-  Author:     Robert Breutzmann
-  Date:       2026-06-12
-  Assignment: Module 2 Assignment – JSP Scriptlets
-  Purpose:    Displays a data table of the Aven Cycle trilogy books by Cass Morris
-              using JSP Scriptlets for Java logic and external CSS for styling.
-  AI Disclosure: This file was generated with the assistance of Claude (Anthropic).
+    Author:     Robert Breutzmann
+    Assignment: Module 2 Assignment – JSP Scriptlets
+    Purpose:    Displays a data table of the Aven Cycle trilogy books by Cass Morris
+                using JSP Scriptlets for Java logic and external CSS for styling.
+    Due Date:   June 14th, 2024
+
 --%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 
@@ -13,17 +13,15 @@
     // Book record: title, year published, and main protagonist
     class Book {
         String title;
-        int yearPublished;
-        String protagonist;
-        String setting;
+        String yearPublished;
         String synopsis;
+        String coverImage;
 
-        Book(String title, int yearPublished, String protagonist, String setting, String synopsis) {
+        Book(String title, String yearPublished, String synopsis, String coverImage) {
             this.title         = title;
             this.yearPublished = yearPublished;
-            this.protagonist   = protagonist;
-            this.setting       = setting;
             this.synopsis      = synopsis;
+            this.coverImage    = coverImage;
         }
     }
 %>
@@ -34,38 +32,33 @@
     Book[] books = {
         new Book(
             "From Unseen Fire",
-            2018,
-            "Latona of the Vitelliae",
-            "Aven (alternate-history Rome)",
-            "A young mage navigates political intrigue and forbidden magic during a fragile republic."
+            "2018",
+            "A young mage navigates political intrigue and forbidden magic during a fragile republic.",
+            "FromUnseenFire.png"
         ),
         new Book(
             "Give Way to Night",
-            2020,
-            "Latona of the Vitelliae",
-            "Aven & the Iberian frontier",
-            "Supernatural threats multiply as war brews on the frontier and faction rivalries intensify."
+            "2020",
+            "Supernatural threats multiply as war brews on the frontier and faction rivalries intensify.",
+            "GiveWayToNight.png"
         ),
         new Book(
             "Aven Cycle: Wages of Shadow",
-            2021,
-            "Latona of the Vitelliae",
-            "Aven & cursed territories",
-            "The shadow magic crisis reaches its peak, forcing Latona into her most dangerous confrontation."
+            "2021",
+            "The shadow magic crisis reaches its peak, forcing Latona into her most dangerous confrontation.",
+            "BloodStainedShade.png"
         ),
         new Book(
-            "A Strange Shadow",
-            2021,
-            "Vibia Sempronia",
-            "Aven (companion novella)",
-            "A short companion story exploring the role of augury and secret-keeping in Aventan society."
+            "The Mages of Aven",
+            "2018-Present",
+            "A microfiction series exploring the world of Aven through the eyes of its mages, one mage and one hundred words at a time.",
+            "MagesOfAven.png"
         ),
         new Book(
-            "The Bloodied Toga",
-            2022,
-            "Marcus Sempronius Rufilius",
-            "Aven senate & streets",
-            "A companion novella that follows the political maneuvering behind the scenes of the main trilogy."
+            "Traveling Light",
+            "2024",
+            "An anthology of fan fiction set in the world created by Cass and her co-hosts of the Worldbuilding for Maschochists podcast known as the Magical Nude Gate (MNG) world.  The hosts and many guests are authors, but fans have submission in the anthology as well.",
+            "TravelingLight.png"
         )
     };
 %>
@@ -86,25 +79,52 @@
 
     <p>
         The <em>Aven Cycle</em> is an alternate-history fantasy series by <strong>Cass Morris</strong>.
-        Set in a Rome-inspired republic called Aven, the books blend political drama with elemental
-        magic. The series centers on women who wield magical gifts in a society that tries to silence
-        them, weaving together themes of power, identity, and resistance.
+        Set in a a second-world Roman republic called Aven, the books blend political drama with elemental
+        magic. The series centers on Latona, a fire and spirit mage who was forced to serve the dictator for
+        many years before his death, now free to explore her powers.  She must navigate learning navigating those
+        powers, the politics of the senate that seek to control the magic, and a rising threat from a distant land.
+        All the while, she also is navigating a loveless marriage, and very strong feelings for one of the strongest
+        and most influential men in Aven, who holds a dark secret of his own.  As a shadow and water mage, Sempronius
+        is forbidden from being in the Senate, and yet, if no one knows...
     </p>
+
+    <h2>Companion Series - Mages of Aven</h2>
+
+    <p>
+        <em>The Mages of Aven</em> is a series of very short stories written by <strong>Cass Morris</strong>
+        in the world of Aven.  The goal is to explore the magical system she created, as well as see Aven through
+        the eyes of people others than the main characters of the Aven Cycle.  THis series, only available to her Patreon
+        Subscribers, is one story at a time, each from the point of view of a different mage, exploring different
+        aspects of the connection to magic, politics, friendship, love, and everything else inside the world of Aven.
+    </p>
+
+    <h2>The Anthology - Traveling Light</h2>
+
+    <p>
+        <em>Traveling Light<em> in an anthology of stories in the crafted world that was created by the hosts of the 
+        podcast <em>Worldbuilding for Masochists</em>: <strong>Alexandra Rowland</strong> and <strong>Rowenna Miller</strong>
+        no longer host the show, but have contributed to the world, and this anthology.  Current hosts <strong>Cass Morris, 
+        Marshall Ryan Maresca,</strong> and <strong> Natania Barron</strong> upkeep this world they build on the podcast, 
+        getting tidbits from their guest hosts every time they have one.  A major tent-post of this world is the Magical
+        Nude Gates (MNG), which allow people to travel between gates, but cannot take anything with them.  No weapons, no papers,
+        no possessions...  no clothes.  They explore the implications of what this, and many other things mean on how
+        a society will develop on their podcast to help avid worldbuilders create a more vibrant and realistic world for their
+        novels, fantasy games, or just for fun!
+
+        The anthology is a collection of short stories set in this world, mostly by the hosts and guest hosts.  Several
+        fans wrote stores that got added to the anthology as well!  Making this world a TRULY collaborative effort!
 
     <%-- Field descriptions tell the reader what each column means --%>
     <h2>Field Descriptions</h2>
     <dl>
+        <dt>Cover</dt>
+        <dd>The official cover art for the book or companion work.</dd>
+
         <dt>Title</dt>
         <dd>The full title of the book or companion novella.</dd>
 
         <dt>Year Published</dt>
         <dd>The calendar year the work was first published.</dd>
-
-        <dt>Protagonist</dt>
-        <dd>The primary point-of-view character for that volume.</dd>
-
-        <dt>Setting</dt>
-        <dd>The primary geographic and story location.</dd>
 
         <dt>Synopsis</dt>
         <dd>A brief one-sentence description of the book's central conflict.</dd>
@@ -116,10 +136,9 @@
         <thead>
             <tr>
                 <th>#</th>
+                <th>Cover</th>
                 <th>Title</th>
                 <th>Year Published</th>
-                <th>Protagonist</th>
-                <th>Setting</th>
                 <th>Synopsis</th>
             </tr>
         </thead>
@@ -132,10 +151,9 @@
             %>
             <tr>
                 <td><%= i + 1 %></td>
+                <td><img src="images/<%= book.coverImage %>" alt="<%= book.title %> cover" class="cover-img"></td>
                 <td><%= book.title %></td>
                 <td><%= book.yearPublished %></td>
-                <td><%= book.protagonist %></td>
-                <td><%= book.setting %></td>
                 <td><%= book.synopsis %></td>
             </tr>
             <%
@@ -147,8 +165,11 @@
 
     <footer>
         <p>
-            Data compiled by Robert Breutzmann &mdash; CSD-430 Module 2 Assignment &mdash; 2026-06-12.<br>
-            Book information sourced from the author's official website and publisher records.
+            Data compiled by Robert Breutzmann -- CSD-430 Module 2 Assignment -- 2026-06-14.<br>
+            Book information sourced from the author's
+            <a href="https://cassmorriswrites.com/" target="_blank" rel="noopener noreferrer">official website</a>,
+            her <a href="https://www.patreon.com/CassRMorris" target="_blank" rel="noopener noreferrer">Patreon</a>
+            and <a href="https://worldbuildingformasochists.podbean.com/p/traveling-light-tales-of-the-magical-gates/" target="_blank" rel="noopener noreferrer">Worldbuilding for Maschochists page</a> on the anthology, <em>Traveling Light</em>.
         </p>
     </footer>
 
