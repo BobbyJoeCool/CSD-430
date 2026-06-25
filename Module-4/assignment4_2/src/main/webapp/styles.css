@@ -1,0 +1,104 @@
+/*
+ * Author:     Robert Breutzmann
+ * Assignment: Module 4 Assignment - JavaBeans
+ * Purpose:    External stylesheet for the Aven Cycle JavaBean data display page.
+ * Due Date:   June 28th, 2026
+ */
+
+/* Full-viewport background */
+html {
+    background-color: #f5f0e8;
+}
+
+/* Page-wide base styles */
+body {
+    font-family: Georgia, serif;
+    background-color: #f5f0e8;
+    color: #2c1e0f;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+/* Page title */
+h1 {
+    text-align: center;
+    color: #6b2d0d;
+    font-size: 2em;
+    margin-bottom: 4px;
+}
+
+/* Section subheadings */
+h2 {
+    color: #8b4513;
+    border-bottom: 2px solid #c0874a;
+    padding-bottom: 4px;
+    margin-top: 30px;
+}
+
+/* Descriptive paragraphs */
+p {
+    line-height: 1.6;
+}
+
+/* Data table */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 16px;
+    background-color: #fff8f0;
+}
+
+/* Book cover thumbnails */
+.cover-img {
+    width: 80px;
+    height: auto;
+    display: block;
+}
+
+/* Table header row */
+thead tr {
+    background-color: #6b2d0d;
+    color: #fff8f0;
+}
+
+th, td {
+    border: 1px solid #c0874a;
+    padding: 10px 14px;
+    text-align: left;
+    vertical-align: top;
+}
+
+/* Alternating row shading */
+tbody tr:nth-child(even) {
+    background-color: #faecd8;
+}
+
+tbody tr:hover {
+    background-color: #f0d5aa;
+}
+
+/* Field description list */
+dl {
+    max-width: 800px;
+}
+
+dt {
+    font-weight: bold;
+    color: #6b2d0d;
+    margin-top: 10px;
+}
+
+dd {
+    margin-left: 20px;
+    margin-bottom: 4px;
+}
+
+/* Footer note */
+footer {
+    margin-top: 40px;
+    font-size: 0.85em;
+    color: #7a6550;
+    border-top: 1px solid #c0874a;
+    padding-top: 10px;
+}
