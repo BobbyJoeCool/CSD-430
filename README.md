@@ -4,15 +4,25 @@ This course examines the PHP Server-side scripting language. Topics include cook
 
 ## Table of Contents
 
-- [Week One](#week-one) — [Module One: Installation and Configuration](#module-one-instasllation-and-configuration)
-- [Week Two](#week-two) — [Module Two: Java Scriptlets](#module-two-java-scriptlets)
-- [Week Three](#week-three) — [Module Three: JSP Forms](#module-three-jsp-forms)
-- [Week Four](#week-four) — [Module Four: JavaBeans](#module-four-javabeans)
-- [Week Five](#week-five) — [Modules Five & Six: CRUD - READ, JDBC, and JavaBeans](#modules-five--six-crud---read-jdbc-and-javabeans)
-- [Week Six](#week-six) — [Module Seven: Module Title](#module-seven-module-title)
-- [Week Seven](#week-seven) — [Module Eight: CRUD - UPDATE, JDBC, and JavaBeans](#module-eight-crud---update-jdbc-and-javabeans)
-- [Week Eight](#week-eight) — [Module Nine: CRUD - DELETE, JDBC, and JavaBeans](#module-nine-crud---delete-jdbc-and-javabeans)
-- [Week Nine](#week-nine) — [Module Ten: Custom Tags](#module-ten-custom-tags) / [Module Eleven: Apache Maven & Coding Standards](#module-eleven-apatche-maven--coding-standards)
+- [Week One](#week-one)
+  - [Module One: Installation and Configuration](#module-one-instasllation-and-configuration)
+- [Week Two](#week-two)
+  - [Module Two: Java Scriptlets](#module-two-java-scriptlets)
+- [Week Three](#week-three)
+  - [Module Three: JSP Forms](#module-three-jsp-forms)
+- [Week Four](#week-four)
+  - [Module Four: JavaBeans](#module-four-javabeans)
+- [Week Five](#week-five)
+  - [Modules Five & Six: CRUD - READ, JDBC, and JavaBeans](#modules-five--six-crud---read-jdbc-and-javabeans)
+- [Week Six](#week-six)
+  - [Module Seven: Module Title](#module-seven-module-title)
+- [Week Seven](#week-seven)
+  - [Module Eight: CRUD - UPDATE, JDBC, and JavaBeans](#module-eight-crud---update-jdbc-and-javabeans)
+- [Week Eight](#week-eight)
+  - [Module Nine: CRUD - DELETE, JDBC, and JavaBeans](#module-nine-crud---delete-jdbc-and-javabeans)
+- [Week Nine](#week-nine)
+  - [Module Ten: Custom Tags](#module-ten-custom-tags)
+  - [Module Eleven: Apache Maven & Coding Standards](#module-eleven-apatche-maven--coding-standards)
 
 ### Course Skills
 
