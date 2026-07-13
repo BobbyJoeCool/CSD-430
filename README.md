@@ -537,15 +537,46 @@ For this week’s project assignment, you will gather data from a database (db),
 
 **Monday, July 6th, 2026 through Sunday, July 12th, 2026**
 
-### Module Seven: Module Title
+### Module Seven: CRUD – CREATE, JDBC, and JavaBeans
 
-Module Description
+In the last module, we started working with CRUD, the acronym for CREATE, READ, UPDATE, and DELETE. We started with the search function known as READ. It allows the search and retrieval of a specific record or multiple records held in the data. To help us use READ, we also implemented the use of JavaBeans.
+
+In this module, we will continue to work with JavaBeans. We will implement the use of the CREATE function of CRUD. This will involve the ability to add one or more records to the data. In the data, we will continue to have a unique key held in the data.
 
 #### Deliverables
 
+- Review Module Resources.
+- Course Introduction Discussion Board - Due by Sunday 11:59 p.m., CST.
+- Module 7 Discussion Board Initial Post - Due by Thursday 11:59 p.m., CST.
+- Discussion Board Responses - Due by Sunday 11:59 p.m., CST.
+- Module 7 Assignment - Due by Sunday 11:59 p.m., CST.
+- Module 7 Programming Assignment - Due by Sunday 11:59 p.m., CST.
+
 #### Resources
 
+**Review**
+
+- [How to store and retrieve data using Jakarta Persistence of Jakarta EE](https://jakarta.ee/learn/starter-guides/how-to-store-and-retrieve-data-using-jakarta-persistence/) (jakarta.ee, 2024).
+- [CRUD with Jakarta Persistence API in Java](https://medium.com/@ika.vcc/crud-with-jakarta-persistence-api-in-java-589fd146f00a) (Kapri, medium.com, 2023).
+- [JavaBean class in Java](https://www.geeksforgeeks.org/java/javabean-class-java/) (geeksforgeeks.com, 2023).
+
+**Videos and Resources**
+
+- CRUD Create Video (Bellevue University, 2024).
+    - M7_CRUD_Examples.zip
+    - M7_WEB-07-Update_Code_Examples.zip
+    - M7_WEB-07.zip
+
 #### Discussion Board
+
+**Discussion Question:**
+
+The Spring Framework application development is becoming a very popular approach for developing applications for the Java EE platform. There are several benefits to using the Spring Framework. For this assignment, you are to take a light overview of the Spring Framework.
+
+Select one of the topics below. Then, answer the “what,” “how,” and “why” questions below about your selected topic. Provide a simple code or code snippet example to further illustrate your thoughts.
+
+- Dependency Injection (DI)
+- Aspect Oriented Programming (AOP)
 
 **'What', 'How', and 'Why'**
 
@@ -556,6 +587,35 @@ Module Description
 - **Why:** Justify your position and/or course of action. The audience needs proof the information you are presenting is creditable and actionable.
 
 #### Assignments
+
+##### Assignment 7.2: CRUD App - Part 2
+
+> !**Note:** Please do not submit more than the Module 5 & 6, and Module 7 project files required for Module 7. Doing so will cause you to lose 30% of your grade.
+
+For this module, you will continue to use the same database (db) and table from the previous module. For this module's assignment, you will create a form that gathers data from the user for adding a record to the data held in the db. The form will hold all HTML entry fields for gathering the user input data. The key value will be added when the data form has been submitted. The returning data display will be all records in a table format, having all fields in a separate table column along with field titles in the thead section of the table. The input form for creating a new record may be inside an HTML page or a JSP page. The display page may be in the same JSP page or in a separate JSP page. Remember, this is Project Part 2, not a new project.
+
+For this assignment, you will ensure you:
+
+- Document your code
+- Include the updated index.jsp file
+- Include the original create, populate, and delete Java source code file
+- Use Scriptlets for holding Java code
+- In JSP pages, all HTML tags will be outside of Java Scriptlets
+- Display data in an HTML table format
+- Including other display items such as field and recode descriptions, title, and overall data description.
+- Display data will have a minimum of 5 fields.
+- Submit all project files, including source code.
+
+
+**Assignment Requirements and Grading:**
+
+- This assignment is due by Sunday, 11:59 p.m., CST.
+- Add the necessary documentation as described in the [following instructions](/Course_Info/Documentation%20Requirements.pdf).
+- Capture screenshots, combined in a single Word document, demonstrating you have correctly installed and configured Java and JavaFX. Include your name, date, and assignment number.
+- Submit your assignment by clicking in the Module Assignment, then use the Attach Files icon from the toolbar (the paperclip). Select your assignment file, add the URL to your GitHub repository in the comments area, and then click on Submit.
+    - /<your_last_name/>-/<module_number/>/<course/>.zip.
+    - Example: darrell_mod_3_csd430.zip.
+
 
 #### Summary
 
