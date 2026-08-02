@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  customTags.tld
+
+  This is the Tag Library Descriptor -- the XML file that connects the
+  <ct:...> tags used on a JSP page to the actual Java classes that
+  implement them. For each tag name it tells the JSP engine:
+    - which Java class handles it (tag-class)
+    - what attributes it accepts, and whether each is required
+    - whether it is allowed to have a body, and what kind (body-content)
+  Without this file the JSP engine has no way to know that, say,
+  <ct:formatDate> means "run tags.DateFormatTag".
+-->
+
+<taglib xmlns="https://jakarta.ee/xml/ns/jakartaee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+                            https://jakarta.ee/xml/ns/jakartaee/web-jsptaglibrary_3_0.xsd"
+        version="3.0">
+
+    <tlib-version>1.0</tlib-version>
+    <short-name>ct</short-name>
+    <uri>/customTags</uri>
+
+    <!-- 1) Date formatter: reformats any input date to YYYY/MM/DD -->
+    <tag>
+        <name>formatDate</name>
+        <tag-class>tags.DateFormatTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <name>value</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>pattern</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+
+    <!-- 2) Widget that only renders its body when a user is logged in -->
+    <tag>
+        <name>loggedIn</name>
+        <tag-class>tags.LoggedInTag</tag-class>
+        <body-content>scriptless</body-content>
+    </tag>
+
+    <!-- 3) Widget that only renders its body for users with the MANAGER role -->
+    <tag>
+        <name>managerOnly</name>
+        <tag-class>tags.ManagerRoleTag</tag-class>
+        <body-content>scriptless</body-content>
+    </tag>
+
+</taglib>
